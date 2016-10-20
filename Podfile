@@ -3,8 +3,6 @@ use_frameworks!
 
 workspace 'Workspace'
 
-def commons
-end
 
 abstract_target 'Rx' do
     pod 'RxSwift',    '~> 3.0.0-beta.1'
@@ -13,6 +11,10 @@ abstract_target 'Rx' do
     
     target 'AppSub1' do
         project 'AppSub1/AppSub1'
+    end
+
+    target 'AppSub2' do
+        project 'AppSub2/AppSub2'
     end
 
     target 'ViewKit' do

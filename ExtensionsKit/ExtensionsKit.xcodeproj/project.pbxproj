@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3A5E6ACECC7AAA28241879DD /* Pods_Rx_ExtensionsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC9A4D7B61955CFF35720E4 /* Pods_Rx_ExtensionsKit.framework */; };
-		3FCB35D21B69F5AA5EBF1842 /* Pods_ExtensionsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 393869DE39B5608A81826EE2 /* Pods_ExtensionsKit.framework */; };
 		D2AC56101DB3B24F009364A1 /* ExtensionsKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D2AC560E1DB3B24F009364A1 /* ExtensionsKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2AC56171DB3B275009364A1 /* CGRect+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AC56161DB3B275009364A1 /* CGRect+Extensions.swift */; };
 		D2AC56191DB3B2CA009364A1 /* CGSize+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AC56181DB3B2CA009364A1 /* CGSize+Extensions.swift */; };
@@ -33,7 +32,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FCB35D21B69F5AA5EBF1842 /* Pods_ExtensionsKit.framework in Frameworks */,
 				3A5E6ACECC7AAA28241879DD /* Pods_Rx_ExtensionsKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,7 +133,7 @@
 				TargetAttributes = {
 					D2AC560A1DB3B24F009364A1 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = D9P69ND6CZ;
+						DevelopmentTeam = 5HA8PNB4HA;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
@@ -323,7 +321,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = D9P69ND6CZ;
+				DEVELOPMENT_TEAM = 5HA8PNB4HA;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -347,7 +345,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = D9P69ND6CZ;
+				DEVELOPMENT_TEAM = 5HA8PNB4HA;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";

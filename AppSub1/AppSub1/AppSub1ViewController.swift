@@ -9,11 +9,13 @@
 import UIKit
 import ViewKit
 import ExtensionsKit
+import RxSwift
 
 
 final class AppSub1ViewController: UIViewController {
     
     var ball: AppView?
+    var disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +23,9 @@ final class AppSub1ViewController: UIViewController {
         var frame = view.frame
         frame.origin = frame.center(in: view.frame)
         frame.size = frame.size.half()
+        frame.size.rx_something().subscribe(
+            onNext: { success in print("Success \(success)") }
+        ).addDisposableTo(disposeBag)
         
         ball = AppView(frame: frame, color: .red)
         ball?.center = view.center

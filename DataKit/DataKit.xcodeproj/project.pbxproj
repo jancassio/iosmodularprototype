@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		551BFCF0401197BAB8D55961 /* Pods_Rx_DataKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B20D50066B80E2950D5C32E /* Pods_Rx_DataKit.framework */; };
-		B6B09646F5B9781B0424629C /* Pods_DataKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FA6A22E2F80DC8D45FF509 /* Pods_DataKit.framework */; };
 		D2C5CF651DB2812500EF4C2A /* DataKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D2C5CF631DB2812500EF4C2A /* DataKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -29,7 +28,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6B09646F5B9781B0424629C /* Pods_DataKit.framework in Frameworks */,
 				551BFCF0401197BAB8D55961 /* Pods_Rx_DataKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -129,7 +127,7 @@
 				TargetAttributes = {
 					D2C5CF5F1DB2812400EF4C2A = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = D9P69ND6CZ;
+						DevelopmentTeam = 5HA8PNB4HA;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -310,7 +308,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = D9P69ND6CZ;
+				DEVELOPMENT_TEAM = 5HA8PNB4HA;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -331,7 +329,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = D9P69ND6CZ;
+				DEVELOPMENT_TEAM = 5HA8PNB4HA;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";

@@ -10,26 +10,10 @@
 		9CD0CFC4EF06F50751A2E15D /* Pods_Rx_ViewKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94CAC45195544AC1C7C1ABB1 /* Pods_Rx_ViewKit.framework */; };
 		D2AC55FC1DB3B005009364A1 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AC55FB1DB3B005009364A1 /* AppView.swift */; };
 		D2C5CF501DB2810700EF4C2A /* ViewKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D2C5CF4E1DB2810700EF4C2A /* ViewKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D2DDDFCB1DB3B7EB0027AA07 /* ExtensionsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2DDDFCA1DB3B7EB0027AA07 /* ExtensionsKit.framework */; };
-		ECD9DC27F854C81AAC6D2BB7 /* Pods_ViewKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 192488F8C84FE6BD819EF621 /* Pods_ViewKit.framework */; };
+		DD36B1501DB9202F0063AEFE /* XibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD36B14F1DB9202F0063AEFE /* XibView.xib */; };
+		DD36B1521DB922A80063AEFE /* XibViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD36B1511DB922A80063AEFE /* XibViewController.swift */; };
+		DD36B15D1DB92ECB0063AEFE /* ExtensionsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD36B15C1DB92ECB0063AEFE /* ExtensionsKit.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		D2DDDFDE1DB3D7110027AA07 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D2DDDFDA1DB3D7100027AA07 /* ExtensionsKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D2AC560B1DB3B24F009364A1;
-			remoteInfo = ExtensionsKit;
-		};
-		D2DDDFE01DB3D7200027AA07 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D2DDDFDA1DB3D7100027AA07 /* ExtensionsKit.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = D2AC560A1DB3B24F009364A1;
-			remoteInfo = ExtensionsKit;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		192488F8C84FE6BD819EF621 /* Pods_ViewKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,9 +27,9 @@
 		D2C5CF4E1DB2810700EF4C2A /* ViewKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewKit.h; sourceTree = "<group>"; };
 		D2C5CF4F1DB2810700EF4C2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2DDDFCA1DB3B7EB0027AA07 /* ExtensionsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExtensionsKit.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/Workspace-cydyrrgxfmdcnsabsluaaghuypmj/Build/Products/Debug-iphonesimulator/ExtensionsKit.framework"; sourceTree = "<group>"; };
-		D2DDDFD31DB3BC190027AA07 /* ExtensionsKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionsKit.h; sourceTree = "<group>"; };
-		D2DDDFD41DB3BC190027AA07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D2DDDFDA1DB3D7100027AA07 /* ExtensionsKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ExtensionsKit.xcodeproj; path = ../ExtensionsKit/ExtensionsKit.xcodeproj; sourceTree = "<group>"; };
+		DD36B14F1DB9202F0063AEFE /* XibView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XibView.xib; sourceTree = "<group>"; };
+		DD36B1511DB922A80063AEFE /* XibViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XibViewController.swift; sourceTree = "<group>"; };
+		DD36B15C1DB92ECB0063AEFE /* ExtensionsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExtensionsKit.framework; path = "../ExtensionsKit/build/Debug-iphoneos/ExtensionsKit.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2DDDFCB1DB3B7EB0027AA07 /* ExtensionsKit.framework in Frameworks */,
-				ECD9DC27F854C81AAC6D2BB7 /* Pods_ViewKit.framework in Frameworks */,
+				DD36B15D1DB92ECB0063AEFE /* ExtensionsKit.framework in Frameworks */,
 				9CD0CFC4EF06F50751A2E15D /* Pods_Rx_ViewKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,9 +59,8 @@
 		D2C5CF411DB2810700EF4C2A = {
 			isa = PBXGroup;
 			children = (
-				D2DDDFDA1DB3D7100027AA07 /* ExtensionsKit.xcodeproj */,
+				DD36B14E1DB91F280063AEFE /* Support */,
 				D2C5CF4D1DB2810700EF4C2A /* ViewKit */,
-				D2DDDFD21DB3BC190027AA07 /* ExtensionsKit */,
 				D2C5CF4C1DB2810700EF4C2A /* Products */,
 				D2DDDFC91DB3B7EB0027AA07 /* Frameworks */,
 				60258884EE9EB0AB52DBAC6B /* Pods */,
@@ -106,6 +88,7 @@
 		D2DDDFC91DB3B7EB0027AA07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DD36B15C1DB92ECB0063AEFE /* ExtensionsKit.framework */,
 				D2DDDFCA1DB3B7EB0027AA07 /* ExtensionsKit.framework */,
 				192488F8C84FE6BD819EF621 /* Pods_ViewKit.framework */,
 				94CAC45195544AC1C7C1ABB1 /* Pods_Rx_ViewKit.framework */,
@@ -113,21 +96,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D2DDDFD21DB3BC190027AA07 /* ExtensionsKit */ = {
+		DD36B14E1DB91F280063AEFE /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				D2DDDFD31DB3BC190027AA07 /* ExtensionsKit.h */,
-				D2DDDFD41DB3BC190027AA07 /* Info.plist */,
+				DD36B14F1DB9202F0063AEFE /* XibView.xib */,
+				DD36B1511DB922A80063AEFE /* XibViewController.swift */,
 			);
-			path = ExtensionsKit;
-			sourceTree = "<group>";
-		};
-		D2DDDFDB1DB3D7100027AA07 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D2DDDFDF1DB3D7110027AA07 /* ExtensionsKit.framework */,
-			);
-			name = Products;
+			name = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,16 +124,15 @@
 			buildConfigurationList = D2C5CF531DB2810700EF4C2A /* Build configuration list for PBXNativeTarget "ViewKit" */;
 			buildPhases = (
 				BFBC9C2A9F0682895430B9E4 /* [CP] Check Pods Manifest.lock */,
-				D2C5CF461DB2810700EF4C2A /* Sources */,
 				D2C5CF471DB2810700EF4C2A /* Frameworks */,
 				D2C5CF481DB2810700EF4C2A /* Headers */,
 				D2C5CF491DB2810700EF4C2A /* Resources */,
+				D2C5CF461DB2810700EF4C2A /* Sources */,
 				EB1BB4EA5ECBB24F755A7CDF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D2DDDFE11DB3D7200027AA07 /* PBXTargetDependency */,
 			);
 			name = ViewKit;
 			productName = ViewKit;
@@ -176,7 +150,7 @@
 				TargetAttributes = {
 					D2C5CF4A1DB2810700EF4C2A = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = D9P69ND6CZ;
+						DevelopmentTeam = 5HA8PNB4HA;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
@@ -192,12 +166,6 @@
 			mainGroup = D2C5CF411DB2810700EF4C2A;
 			productRefGroup = D2C5CF4C1DB2810700EF4C2A /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = D2DDDFDB1DB3D7100027AA07 /* Products */;
-					ProjectRef = D2DDDFDA1DB3D7100027AA07 /* ExtensionsKit.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				D2C5CF4A1DB2810700EF4C2A /* ViewKit */,
@@ -205,21 +173,12 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		D2DDDFDF1DB3D7110027AA07 /* ExtensionsKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ExtensionsKit.framework;
-			remoteRef = D2DDDFDE1DB3D7110027AA07 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
 		D2C5CF491DB2810700EF4C2A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD36B1501DB9202F0063AEFE /* XibView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,19 +222,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD36B1521DB922A80063AEFE /* XibViewController.swift in Sources */,
 				D2AC55FC1DB3B005009364A1 /* AppView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D2DDDFE11DB3D7200027AA07 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ExtensionsKit;
-			targetProxy = D2DDDFE01DB3D7200027AA07 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D2C5CF511DB2810700EF4C2A /* Debug */ = {
@@ -384,7 +336,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = D9P69ND6CZ;
+				DEVELOPMENT_TEAM = 5HA8PNB4HA;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -407,7 +359,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = D9P69ND6CZ;
+				DEVELOPMENT_TEAM = 5HA8PNB4HA;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
