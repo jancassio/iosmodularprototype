@@ -22,4 +22,7 @@
    <FileRef
       location = "group:ExtensionsKit/ExtensionsKit.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
 </Workspace>

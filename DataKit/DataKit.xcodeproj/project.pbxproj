@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		551BFCF0401197BAB8D55961 /* Pods_Rx_DataKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B20D50066B80E2950D5C32E /* Pods_Rx_DataKit.framework */; };
+		B6B09646F5B9781B0424629C /* Pods_DataKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FA6A22E2F80DC8D45FF509 /* Pods_DataKit.framework */; };
 		D2C5CF651DB2812500EF4C2A /* DataKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D2C5CF631DB2812500EF4C2A /* DataKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0FBF7ABA3090304E9EF3B5A7 /* Pods-DataKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataKit.release.xcconfig"; path = "../Pods/Target Support Files/Pods-DataKit/Pods-DataKit.release.xcconfig"; sourceTree = "<group>"; };
+		26FA6A22E2F80DC8D45FF509 /* Pods_DataKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DataKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B20D50066B80E2950D5C32E /* Pods_Rx_DataKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rx_DataKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E440AC644B7DD396B54A77E /* Pods-DataKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataKit.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-DataKit/Pods-DataKit.debug.xcconfig"; sourceTree = "<group>"; };
+		CEBB5E2C0AAE2FE62DAA954C /* Pods-Rx-DataKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rx-DataKit.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Rx-DataKit/Pods-Rx-DataKit.debug.xcconfig"; sourceTree = "<group>"; };
 		D2C5CF601DB2812500EF4C2A /* DataKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2C5CF631DB2812500EF4C2A /* DataKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataKit.h; sourceTree = "<group>"; };
 		D2C5CF641DB2812500EF4C2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E08AA49BA312A4FA3DD3C8A9 /* Pods-Rx-DataKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rx-DataKit.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Rx-DataKit/Pods-Rx-DataKit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +29,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6B09646F5B9781B0424629C /* Pods_DataKit.framework in Frameworks */,
+				551BFCF0401197BAB8D55961 /* Pods_Rx_DataKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4099BA8BEB20178B55375B33 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26FA6A22E2F80DC8D45FF509 /* Pods_DataKit.framework */,
+				2B20D50066B80E2950D5C32E /* Pods_Rx_DataKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		49CD03ED4877AF79119C5C85 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E440AC644B7DD396B54A77E /* Pods-DataKit.debug.xcconfig */,
+				0FBF7ABA3090304E9EF3B5A7 /* Pods-DataKit.release.xcconfig */,
+				CEBB5E2C0AAE2FE62DAA954C /* Pods-Rx-DataKit.debug.xcconfig */,
+				E08AA49BA312A4FA3DD3C8A9 /* Pods-Rx-DataKit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D2C5CF561DB2812400EF4C2A = {
 			isa = PBXGroup;
 			children = (
 				D2C5CF621DB2812500EF4C2A /* DataKit */,
 				D2C5CF611DB2812500EF4C2A /* Products */,
+				49CD03ED4877AF79119C5C85 /* Pods */,
+				4099BA8BEB20178B55375B33 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,10 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2C5CF681DB2812500EF4C2A /* Build configuration list for PBXNativeTarget "DataKit" */;
 			buildPhases = (
+				D2207BE17C80D010D6FE03B9 /* [CP] Check Pods Manifest.lock */,
 				D2C5CF5B1DB2812400EF4C2A /* Sources */,
 				D2C5CF5C1DB2812400EF4C2A /* Frameworks */,
 				D2C5CF5D1DB2812400EF4C2A /* Headers */,
 				D2C5CF5E1DB2812400EF4C2A /* Resources */,
+				67AA94889D190FCFE1C99822 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,6 +160,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		67AA94889D190FCFE1C99822 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-Rx-DataKit/Pods-Rx-DataKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2207BE17C80D010D6FE03B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D2C5CF5B1DB2812400EF4C2A /* Sources */ = {
@@ -239,6 +306,7 @@
 		};
 		D2C5CF691DB2812500EF4C2A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEBB5E2C0AAE2FE62DAA954C /* Pods-Rx-DataKit.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -259,6 +327,7 @@
 		};
 		D2C5CF6A1DB2812500EF4C2A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E08AA49BA312A4FA3DD3C8A9 /* Pods-Rx-DataKit.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -296,6 +365,7 @@
 				D2C5CF6A1DB2812500EF4C2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37E6613CDCDFDBBF1655ED1A /* Pods_AppSub3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B5D9197EE89EEB036317D8 /* Pods_AppSub3.framework */; };
 		D2C5CF301DB265C200EF4C2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C5CF2F1DB265C200EF4C2A /* AppDelegate.swift */; };
 		D2C5CF321DB265C200EF4C2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C5CF311DB265C200EF4C2A /* ViewController.swift */; };
 		D2C5CF351DB265C200EF4C2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C5CF331DB265C200EF4C2A /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C7C57070B7A4A6065EB1AB5 /* Pods-AppSub3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppSub3.release.xcconfig"; path = "../Pods/Target Support Files/Pods-AppSub3/Pods-AppSub3.release.xcconfig"; sourceTree = "<group>"; };
+		AEFB99593CEA28284C0BFC7B /* Pods-AppSub3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppSub3.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-AppSub3/Pods-AppSub3.debug.xcconfig"; sourceTree = "<group>"; };
+		D0B5D9197EE89EEB036317D8 /* Pods_AppSub3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppSub3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2C5CF2C1DB265C200EF4C2A /* AppSub3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppSub3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2C5CF2F1DB265C200EF4C2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2C5CF311DB265C200EF4C2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37E6613CDCDFDBBF1655ED1A /* Pods_AppSub3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4EA73A6A7207DFAB5CF1BE0B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AEFB99593CEA28284C0BFC7B /* Pods-AppSub3.debug.xcconfig */,
+				3C7C57070B7A4A6065EB1AB5 /* Pods-AppSub3.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9774A9B46100B94F9DB4D7A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0B5D9197EE89EEB036317D8 /* Pods_AppSub3.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D2C5CF231DB265C200EF4C2A = {
 			isa = PBXGroup;
 			children = (
 				D2C5CF2E1DB265C200EF4C2A /* AppSub3 */,
 				D2C5CF2D1DB265C200EF4C2A /* Products */,
+				4EA73A6A7207DFAB5CF1BE0B /* Pods */,
+				9774A9B46100B94F9DB4D7A8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2C5CF3E1DB265C200EF4C2A /* Build configuration list for PBXNativeTarget "AppSub3" */;
 			buildPhases = (
+				9310D9E098BCED18E33462B9 /* [CP] Check Pods Manifest.lock */,
 				D2C5CF281DB265C200EF4C2A /* Sources */,
 				D2C5CF291DB265C200EF4C2A /* Frameworks */,
 				D2C5CF2A1DB265C200EF4C2A /* Resources */,
+				978084706C7E461F693DFF34 /* [CP] Embed Pods Frameworks */,
+				516B4B7F3515B652E90D0D15 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		516B4B7F3515B652E90D0D15 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-AppSub3/Pods-AppSub3-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9310D9E098BCED18E33462B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		978084706C7E461F693DFF34 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-AppSub3/Pods-AppSub3-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D2C5CF281DB265C200EF4C2A /* Sources */ = {
@@ -257,6 +332,7 @@
 		};
 		D2C5CF3F1DB265C200EF4C2A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEFB99593CEA28284C0BFC7B /* Pods-AppSub3.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = D9P69ND6CZ;
@@ -272,6 +348,7 @@
 		};
 		D2C5CF401DB265C200EF4C2A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C7C57070B7A4A6065EB1AB5 /* Pods-AppSub3.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = D9P69ND6CZ;
@@ -304,6 +381,7 @@
 				D2C5CF401DB265C200EF4C2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
